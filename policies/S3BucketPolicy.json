@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowDeveloperReadObjects",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::754626102674:user/developer-user"
+      },
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::rushikesh-secure-s3-2026/*"
+    }
+  ]
+}
